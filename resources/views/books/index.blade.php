@@ -31,7 +31,7 @@
                                 <td>{{ $book->author }}</td>
                                 <td>{{ $book->category->name }}</td>
                                 <td>{{ $book->is_available ? __('messages.yes') : __('messages.no') }}</td>
-                                <td class="text-center">
+                                <td class="flex gap-2 text-center">
                                     @if ($book->is_available)
                                         <a href="{{ route('books.show', $book->id) }}" class="btn btn-info btn-sm">
                                             {{ __('messages.view') }}
